@@ -1,0 +1,172 @@
+/* DEFAULTS */
+body {
+    background-color: grey;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+}
+/* MAIN */
+.page-content {
+    background-color: lightblue;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.page-top {
+    display: flex;
+    height: 130px;
+}
+
+.page-bottom {
+    display: flex;
+    background-image: url("img/bkg.jpg");
+}
+/* TOP */
+.page-top1 {
+    display: flex;
+    width: 50%;
+}
+
+.page-top2 {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;;
+}
+
+.top-contacts {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.top-logo {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.top-cart {
+    height: 100%;
+}
+
+iframe.cart {
+    width: 100%;
+    min-width: 100px;
+    height: inherit;
+}
+
+.top-login {
+    float: right;
+    height: 100%;
+    float: right;
+}
+
+iframe.login {
+    height: inherit;
+    width: 100%;
+}
+/* BOTTOM */
+.page-menu {
+    width: 20%;
+}
+
+.page-menu button {
+    background-color: black;
+    padding: 6px 8px 6px 16px;
+    font-size: 1.5vw;
+    width: 100%;
+    border-width: 0px;
+    color: grey;
+}
+
+.page-menu button:hover {
+    background-color: cyan;
+}
+
+.page-main {
+    border-style: groove;
+    border-color: red;
+    height: 60vh;
+    flex: 1 1 auto;
+}
+
+.adspace {
+    width: 20%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.adspace img{
+    width: 100%;
+}
+/* MOBILE VIEW */
+@media only screen and (max-width: 800px) {
+    .page-top {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    .page-top1 {
+        width: 100%;
+    }
+    .page-top2 {
+        width: 100%;
+    }
+    .top-login, .top-logo {
+        order: 1;
+        text-align: left;
+    }
+    .top-cart, .top-contacts {
+        order: 2;
+        text-align: right;
+    }
+    .page-bottom {
+        flex-direction: column;
+    }
+    .page-menu, .page-main, .adspace {
+        width: 100%;
+    }
+    .page-main {
+        height: 500px;
+    }
+    .adspace img{
+        width: 40%;
+    }
+}
+/* REGISTRATION */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;/
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+.modalClose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modalClose:hover,
+.modalClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
